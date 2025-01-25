@@ -2,8 +2,8 @@
 
 @import "setting/_fonts.scss";
 @import "setting/_vars.scss";
-@import "setting/_reset.scss";
 @import "setting/_mixin.scss";
+@import "setting/_reset.scss";
 
 @import "section/_header.scss";
 @import "section/_intro.scss";

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../assets/scss/setting/_reset.scss'
-
 const headerNav = [
     {
         title: "intro",

@@ -14,8 +14,8 @@ function HomeView(){
             <Header/> 
             <Main>
                 <Intro/>
-                <Skill/>
                 <Site/>
+                <Skill/>
                 <Port/>
                 <Contact/>
             </Main>
