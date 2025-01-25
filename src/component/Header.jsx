@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../assets/scss/setting/_reset.scss'
 
 const headerNav = [
     {
@@ -28,13 +29,18 @@ function Header(){
     const toggleMenu = ()=>{
         setShow((prevShow) => !prevShow);
     }
-    console.log("headerNav : ", headerNav);
+    console.log("show : ", show);
+    
     return <header id="header" role="banner">
         <div className="header__inner">
             <div className="header__logo">
-                <a href="/">portfolio<em>react</em></a>
+                <h1>
+                    <a href="/">portfolio<em>react.js</em></a>
+                </h1>
             </div>
-            <nav className={'header__nav${show ? "show" : ""}'} role="navigation" aria-label="main-menu">
+            {/* {`header__nav ${show ? 'show' : ''}`} */}
+            <nav className={`header__nav ${show ? 'show' :''}`}
+                role="navigation" aria-label="main-menu">
                 <ul>
                     {headerNav.map((nav,key)=>(
                         <li key={key}>
@@ -43,8 +49,9 @@ function Header(){
                     ))}
                 </ul>
             </nav>
-            <div className="header_nav_mobile" id="headerToggle" 
-                aria-controls="primary-menu" aria-expanded={show?"true":"false"}
+            <div className="header__nav__mobile" id="headerToggle" 
+                aria-controls="primary-menu" 
+                aria-expanded={show?"true":"false"}
                 role="button" tabIndex="0"
                 onClick={toggleMenu}>
                 <span></span>

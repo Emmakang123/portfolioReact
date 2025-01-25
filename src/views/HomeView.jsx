@@ -6,13 +6,11 @@ import Site from '../component/Site';
 import Port from '../component/Port';
 import Contact from "../component/Contact";
 import Footer from '../component/Footer';
-import Skip from '../component/Skip';
 import Main from '../component/Main';
 
 function HomeView(){
     return (
         <>
-            <Skip/>
             <Header/> 
             <Main>
                 <Intro/>

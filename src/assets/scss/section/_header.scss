@@ -7,6 +7,9 @@
     background-color: rgba(116, 99, 99, 0.1);
     backdrop-filter: blur(15px);
     padding: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 
     .header__logo {
         font-size: 0.9rem;
